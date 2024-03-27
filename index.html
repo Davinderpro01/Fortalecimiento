@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Nutrición</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-space-dynamic.css">
+    <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+<!--
+    
+TemplateMo 562 Space Dynamic
+
+https://templatemo.com/tm-562-space-dynamic
+
+-->
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <img src="assets/images/boton.png" width="60" height="60">
+          </a>
+          
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="desnutricion.html">Desnutrición</a></li>
+              <li class="scroll-to-section"><a href="indicadores.html">Indicadores</a></li>
+              <li class="scroll-to-section"><a href="tratamiento.html">Tratamiento y suplementación</a></li>
+              <li class="scroll-to-section"><a href="criterios.html">Criterios</a></li>
+              <li class="scroll-to-section"><a href="cumplimiento.html">Cumplimiento</a></li> 
+              <li class="scroll-to-section"><a href="consejeria.html">Consejería</a></li> 
+              <li class="scroll-to-section"></li> 
+            </ul>        
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-6 align-self-center">
+              <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                <h2>¡Bienvenido a <em>este espacio</em> de conocimiento <span>vital!</span></h2>
+                <p>¡Descubre el portal dedicado a la atención de niños con desnutrición aguda moderada y severa! Accede rápidamente a imágenes, videos y datos esenciales para un tratamiento y monitoreo efectivo.</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="image" data-wow-duration="1s" data-wow-delay="0.5s">
+                <img src="assets/images/principal.jpg" alt="team meeting">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Texto de animación -->
+  <div id="animation-text" class="animation-text">
+    <h1>FORTALECIMIENTO DE LAS ESTRATEGIAS PARA LA ATENCIÓN DE NIÑOS CON DESNUTRICIÓN AGUDA</h1>
+  </div>
+
+  
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.25s">
+          <p>© Copyright 2024 - Lic. Ana Regina Guzmán Quintana 
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Scripts -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/imagesloaded.js"></script>
+  <script src="assets/js/templatemo-custom.js"></script>
+
+  <script>
+    // Esperar a que se cargue completamente la página
+    window.addEventListener('load', function() {
+      // Obtener el elemento de animación
+      var animationText = document.getElementById('animation-text');
+      // Agregar una clase después de 5 segundos
+      setTimeout(function() {
+        animationText.classList.add('hide');
+        // Eliminar el elemento después de la animación
+        setTimeout(function() {
+          animationText.remove();
+        }, 1000); // Espera 1 segundo para eliminar el elemento después de la animación
+      }, 5000); // 5000 milisegundos = 5 segundos
+    });
+  </script>
+
+<style>
+  /* Estilos para el texto de animación */
+  .animation-text {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 1s ease;
+    z-index: 9999;
+    font-family: 'Poppins', sans-serif; /* Utilizando la fuente Poppins */
+    text-align: center;
+  }
+
+  /* Clase para ocultar el texto de animación */
+  .animation-text.hide {
+    opacity: 0;
+  }
+
+  /* Estilos adicionales para el texto */
+  .animation-text h1 {
+    font-size: 6vw; /* Tamaño de fuente relativo al ancho de la pantalla */
+    color: #60b182; /* Color rosa */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    text-transform: uppercase; /* Convertir texto a mayúsculas */
+    max-width: 90%; /* Ancho máximo del texto */
+    margin: 0 auto; /* Centrar horizontalmente */
+  }
+</style>
+
+
+
+</body>
+</html>
